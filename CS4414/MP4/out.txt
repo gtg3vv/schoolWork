@@ -1,0 +1,15 @@
+Makefile
+foo.txt
+hey.txt
+msh
+out.txt
+shell.cpp
+shell.h
+shell.o
+test.txt
+r-- 1 ubuntu ubuntu     0 Apr 17 00:54 foo.txt
+-rwxr-xr-x 1 ubuntu ubuntu 45822 Apr 17 00:30 msh
+-rw-r--r-- 1 ubuntu ubuntu    29 Apr 14 22:31 out.txt
+-rw-r--r-- 1 ubuntu ubuntu  7340 Apr 17 00:26 shell.cpp
+-rw-r--r-- 1 ubuntu ubuntu 77520 Apr 17 00:30 shell.o
+-rw-r--r-- 1 ubuntu ubuntu   489 Apr 15 21:43 test.txt

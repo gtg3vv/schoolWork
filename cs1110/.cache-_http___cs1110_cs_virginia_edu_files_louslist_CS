@@ -1,0 +1,88 @@
+CS|1010|001|Introduction to Information Technology|Craig Dill|Lecture|3|true|false|true|false|false|1530|1645|Olsson Hall 120|99|100
+CS|1110|001|Introduction to Programming|Luther Tychonievich|Lecture|3|true|false|true|false|true|1400|1450|Chemistry Bldg 402|329|350
+CS|1110|002|Introduction to Programming|Upsorn Praphamontripong|Lecture|3|true|false|true|false|true|1100|1150|Wilson Hall 301|181|200
+CS|1110|100|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|930|1045|Olsson Hall 001|46|46
+CS|1110|101|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1100|1215|Olsson Hall 001|46|46
+CS|1110|102|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1230|1345|Olsson Hall 001|46|46
+CS|1110|103|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1400|1515|Olsson Hall 001|47|46
+CS|1110|104|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1530|1645|Olsson Hall 001|46|46
+CS|1110|105|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1700|1815|Olsson Hall 001|46|46
+CS|1110|106|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1830|1945|Olsson Hall 001|43|46
+CS|1110|107|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1100|1215|Mechanical Engr Bldg 213|48|48
+CS|1110|108|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1530|1645|Mechanical Engr Bldg 213|48|48
+CS|1110|109|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1700|1815|Mechanical Engr Bldg 213|47|48
+CS|1110|110|Introduction to Programming|Luther Tychonievich|Laboratory|0|false|false|false|true|false|1830|1945|Mechanical Engr Bldg 213|47|48
+CS|1111|001|Introduction to Programming|Craig Dill|Lecture|3|true|false|true|false|false|1400|1515|Olsson Hall 009|75|75
+CS|1112|001|Introduction to Programming|James Cohoon|Lecture|3|true|false|true|false|true|1400|1515|Rice Hall 130|137|110
+CS|1113|001|Introduction to Programming|Ahmed Ibrahim|Lecture|3|true|false|true|false|true|1100|1150|Thornton Hall E316|31|80
+CS|1501|001|Special Topics in Computer Science|Mark Floryan|Lecture|1|false|true|false|false|false|1700|1750|Thornton Hall E304|27|30
+CS|1501|002|Special Topics in Computer Science|Mark Floryan|Lecture|1|false|false|false|true|false|1700|1750|Olsson Hall 005|26|45
+CS|1501|003|Special Topics in Computer Science|Collin/Cyrus|Lecture|1|false|false|false|true|false|1700|1750|Thornton Hall D223|9|30
+CS|2102|001|Discrete Mathematics|David Edwards+1|Lecture|3|false|true|false|true|false|1230|1345|Mechanical Engr Bldg 205|147|148
+CS|2102|002|Discrete Mathematics|David Edwards+1|Lecture|3|false|true|false|true|false|1400|1515|Mechanical Engr Bldg 205|147|148
+CS|2110|001|Software Development Methods|David Edwards|Lecture|3|true|false|true|false|true|1000|1050|Thornton Hall E303|97|100
+CS|2110|002|Software Development Methods|Nada Basit|Lecture|3|true|false|true|false|true|1200|1250|Rice Hall 130|161|160
+CS|2110|003|Software Development Methods|Nada Basit|Lecture|3|true|false|true|false|true|1300|1350|Mechanical Engr Bldg 205|146|148
+CS|2110|101|Software Development Methods|Nada Basit|Laboratory|0|true|false|false|false|false|1900|2045|Rice Hall 130|92|110
+CS|2110|102|Software Development Methods|Nada Basit|Laboratory|0|false|true|false|false|false|1900|2045|Rice Hall 130|97|110
+CS|2110|103|Software Development Methods|Nada Basit|Laboratory|0|true|false|false|false|false|1700|1845|Rice Hall 130|106|110
+CS|2110|104|Software Development Methods|Nada Basit|Laboratory|0|false|true|false|false|false|1715|1900|Rice Hall 130|109|110
+CS|2150|001|Program and Data Representation|Mark Floryan|Lecture|3|true|false|true|false|true|1400|1450|Wilson Hall 301|163|175
+CS|2150|002|Program and Data Representation|Aaron Bloomfield|Lecture|3|true|false|true|false|true|1300|1350|Rice Hall 130|137|140
+CS|2150|101|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|930|1045|Olsson Hall 001|41|45
+CS|2150|102|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1100|1215|Olsson Hall 001|44|45
+CS|2150|103|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1230|1345|Olsson Hall 001|44|45
+CS|2150|104|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1400|1515|Olsson Hall 001|44|45
+CS|2150|105|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1530|1645|Olsson Hall 001|44|45
+CS|2150|106|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1700|1815|Olsson Hall 001|43|45
+CS|2150|107|Program and Data Representation|Aaron Bloomfield|Laboratory|0|false|true|false|false|false|1830|1945|Olsson Hall 001|40|45
+CS|2190|001|Computer Science Seminar|Thomas Horton|Lecture|1|false|false|false|true|false|1530|1620|Physics Bldg 203|207|210
+CS|3102|001|Theory of Computation|Gabriel Robins|Lecture|3|false|true|false|true|false|1230|1345|Rice Hall 130|178|140
+CS|3205|001|HCI in Software Development|Mary Smith|Lecture|3|false|true|false|true|false|1100|1215|Olsson Hall 009|75|80
+CS|3205|002|HCI in Software Development|Thomas Horton|Lecture|3|false|true|false|true|false|1100|1215|Thornton Hall E303|100|100
+CS|3240|001|Advanced Software Development Techniques|Mary Smith|Lecture|3|false|true|false|true|false|1400|1515|Rice Hall 130|124|108
+CS|3240|101|Advanced Software Development Techniques|Mary Smith|Laboratory|0|true|false|false|false|false|1400|1515|Rice Hall 120|48|44
+CS|3240|102|Advanced Software Development Techniques|Mary Smith|Laboratory|0|true|false|false|false|false|1700|1815|Olsson Hall 011|76|60
+CS|3330|001|Computer Architecture|Charles Reiss|Lecture|3|false|true|false|true|false|1100|1215|Olsson Hall 120|125|135
+CS|3330|002|Computer Architecture|Samira Khan|Lecture|3|false|true|false|true|false|1400|1515|Olsson Hall 009|80|80
+CS|3330|101|Computer Architecture|Charles Reiss|Laboratory|0|false|false|true|false|false|1400|1515|Olsson Hall 001|44|44
+CS|3330|102|Computer Architecture|Charles Reiss|Laboratory|0|false|false|true|false|false|1530|1645|Olsson Hall 001|40|44
+CS|3330|103|Computer Architecture|Charles Reiss|Laboratory|0|false|false|true|false|false|1700|1815|Olsson Hall 001|40|44
+CS|3330|104|Computer Architecture|Charles Reiss|Laboratory|0|false|false|true|false|false|1830|1945|Olsson Hall 001|40|44
+CS|3330|105|Computer Architecture|Charles Reiss|Laboratory|0|false|false|true|false|false|1230|1345|Olsson Hall 001|41|44
+CS|4102|001|Algorithms|Kong-Cheng Wong|Lecture|3|true|false|true|false|false|1400|1515|Clark Hall 108|133|140
+CS|4414|001|Operating Systems|Kong-Cheng Wong|Lecture|3|false|true|false|true|false|1230|1345|Gilmer Hall 130|87|75
+CS|4434|001|Dependable Computing Systems|Homa Alemzadeh|Lecture|3|true|false|true|false|true|900|950|Thornton Hall E304|2|7
+CS|4444|001|Introduction to Parallel Computing|Andrew Grimshaw|Lecture|3|false|true|false|true|false|930|1045|Thornton Hall E316|18|30
+CS|4457|001|Computer Networks|Cameron Whitehouse|Lecture|3|false|true|false|true|false|1530|1645|Olsson Hall 009|33|47
+CS|4501|002|Special Topics in Computer Science|Ahmed Ibrahim|Lecture|3|true|false|true|false|false|1700|1815|Olsson Hall 120|73|80
+CS|4501|003|Special Topics in Computer Science|Connelly Barnes|Lecture|3|false|true|false|true|false|1530|1645|Rice Hall 130|70|96
+CS|4501|004|Special Topics in Computer Science|Thomas Pinckney|Lecture|3|true|false|true|false|false|1400|1515|Rice Hall 340|39|34
+CS|4610|001|Programming Languages|Kevin Angstadt|Lecture|3|false|true|false|true|false|1230|1345|Olsson Hall 011|29|40
+CS|4630|001|Defense Against the Dark Arts|Charles Reiss|Lecture|3|true|false|true|false|false|1530|1645|Rice Hall 130|65|90
+CS|4640|001|Programming Languages for Web Applications|Upsorn Praphamontripong|Lecture|3|false|true|false|true|false|1400|1515|Olsson Hall 005|82|76
+CS|4720|001|Mobile Application Development|Mark Sherriff|Lecture|3|true|false|true|false|true|1100|1150|Olsson Hall 120|79|80
+CS|4730|001|Computer Game Design|Mark Floryan|Lecture|3|true|false|true|false|false|1100|1150|Mechanical Engr Bldg 341|67|72
+CS|4730|100|Computer Game Design|Mark Floryan|Laboratory|0|false|false|false|false|true|1130|1250|Rice Hall 340|32|36
+CS|4730|101|Computer Game Design|Mark Floryan|Laboratory|0|false|false|false|false|true|1000|1120|Rice Hall 340|35|36
+CS|4740|001|Cloud Computing|Marty Humphrey|Lecture|3|false|true|false|true|false|930|1045|Mechanical Engr Bldg 341|77|70
+CS|4750|001|Database Systems|Nada Basit|Lecture|3|true|false|true|false|false|1530|1645|Mechanical Engr Bldg 205|125|80
+CS|4753|001|Electronic Commerce Technologies|Alfred Weaver|Lecture|3|true|false|true|false|false|1530|1645|Thornton Hall E316|74|80
+CS|4971|001|Capstone Practicum II|Aaron Bloomfield|Practicum|3|true|false|true|false|true|1000|1050|Rice Hall 130|92|110
+CS|5014|001|Computation as a Research Tool|Katherine Holcomb|Lecture|3|false|true|false|true|false|1530|1645|Thornton Hall E303|66|70
+CS|5014|003|Computation as a Research Tool|Thomas Hall|Lecture|3|false|true|false|true|false|1530|1645|Chemical Engineering Bldg 005|12|70
+CS|6160|001|Theory of Computation|Mohammad Mahmoody Ghidary|Lecture|3|true|false|true|false|false|1700|1815|Contact Department|4|10
+CS|6434|001|Dependable Computing Systems|Homa Alemzadeh|Lecture|3|true|false|true|false|true|900|950|Thornton Hall E304|1|5
+CS|6444|001|Introduction to Parallel Computing|Andrew Grimshaw|Lecture|3|false|true|false|true|false|930|1045|Thornton Hall E316|10|30
+CS|6501|001|Special Topics in Computer Science|Kai-Wei Chang|Lecture|3|true|false|true|false|false|1700|1815|Olsson Hall 009|42|60
+CS|6501|002|Special Topics in Computer Science|Jack Davidson|Lecture|3|true|false|true|false|false|1100|1215|Rice Hall 032|16|32
+CS|6501|004|Special Topics in Computer Science|Vicente Ordonez-Roman|Lecture|3|false|true|false|true|false|1230|1345|Thornton Hall E316|32|65
+CS|6501|005|Special Topics in Computer Science|Kevin Sullivan|Lecture|3|false|true|false|true|false|1400|1515|Thornton Hall E303|21|50
+CS|6501|006|Special Topics in Computer Science|Lu Feng|Lecture|3|false|true|false|true|false|930|1045|Rice Hall 340|11|15
+CS|6501|007|Special Topics in Computer Science|Dimitrios Diochnos|Lecture|3|true|false|true|false|false|1530|1645|Rice Hall 340|18|30
+CS|6501|008|Special Topics in Computer Science|David Evans|Lecture|3|false|false|false|false|true|930|1200|Thornton Hall D115|17|30
+CS|6501|009|Special Topics in Computer Science|John Stankovic|Lecture|3|true|false|true|false|false|930|1045|Rice Hall 340|23|30
+CS|6501|010|Special Topics in Computer Science|Haiying Shen|Lecture|3|false|true|false|true|false|1530|1645|Olsson Hall 005|63|60
+CS|6501|011|Special Topics in Computer Science|Baishakhi Ray|Lecture|3|false|true|false|true|false|1530|1645|Rice Hall 340|7|30
+CS|6501|012|Special Topics in Computer Science|Hongning Wang|Lecture|3|false|true|false|true|false|1230|1345|Rice Hall 340|29|34
+CS|6750|001|Database Systems|Abdeltawab Hendawi|Lecture|3|false|true|false|true|false|1700|1815|Olsson Hall 009|18|60

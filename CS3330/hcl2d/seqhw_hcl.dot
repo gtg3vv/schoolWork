@@ -1,0 +1,98 @@
+digraph seqhw { // auto-generated HCL2 visualization via graphviz
+    node [ fontname="sans-serif" ];
+    rankdir=BT;
+    ///////////////////////// builtin components ////////////////////////
+
+    _regfile [shape="record" label="{<reg_outputA>reg_outputA|<reg_srcA>reg_srcA}|{<reg_outputB>reg_outputB|<reg_srcB>reg_srcB}|{|{<reg_dstE>reg_dstE|<reg_inputE>reg_inputE}}|{|{<reg_dstM>reg_dstM|<reg_inputM>reg_inputM}}" style="filled" fillcolor="#aaffff"];
+    _datamem [shape="record" label="{<mem_output>mem_output|{<mem_readbit>mem_readbit|<mem_addr>mem_addr}}|{|{<mem_writebit>mem_writebit|<mem_input>mem_input}}" style="filled" fillcolor="#aaffff"];
+    _instmem [shape="record" label="{<i10bytes>i10bytes|<pc>pc}" style="filled" fillcolor="#aaffff"];
+    _status [shape="record" label="{|<Stat>Stat}" style="filled" fillcolor="#aaffff"];
+
+    //////////////////////////// user code //////////////////////////////
+
+_reg_P [shape="record" label="{|{<bubble_P>bubble_P|<stall_P>stall_P}}|{<P_pc>P_pc|<p_pc>p_pc}"];
+_reg_C [shape="record" label="{|{<bubble_C>bubble_C|<stall_C>stall_C}}|{<C_SF>C_SF|<c_SF>c_SF}|{<C_ZF>C_ZF|<c_ZF>c_ZF}"];
+    _instmem:i10bytes -> opcode;
+    opcode -> icode;
+    _instmem:i10bytes -> ifun;
+    _op_Stat [shape="none" label="35-39"];
+    _op_Stat -> _status:Stat;
+    icode -> _op_Stat [style=dotted];
+    _op_valC [shape="none" label="41-44"];
+    _op_valC -> valC;
+    _instmem:i10bytes -> _op_valC;
+    icode -> _op_valC [style=dotted];
+    _instmem:i10bytes -> regB;
+    _instmem:i10bytes -> regA;
+    regA -> _regfile:reg_srcA;
+    _op_reg_srcB [shape="none" label="48-51"];
+    _op_reg_srcB -> _regfile:reg_srcB;
+    regB -> _op_reg_srcB;
+    icode -> _op_reg_srcB [style=dotted];
+    _op_valP [shape="none" label="52-59"];
+    _op_valP -> valP;
+    _reg_P:P_pc -> _op_valP;
+    valC -> _op_valP;
+    icode -> _op_valP [style=dotted];
+    conditionsMet -> _op_valP [style=dotted];
+    _op_p_pc [shape="none" label="60-64"];
+    _op_p_pc -> _reg_P:p_pc;
+    valC -> _op_p_pc;
+    _datamem:mem_output -> _op_p_pc;
+    valP -> _op_p_pc;
+    icode -> _op_p_pc [style=dotted];
+    _op_valE [shape="none" label="66-75"];
+    _op_valE -> valE;
+    _regfile:reg_outputA -> _op_valE;
+    _regfile:reg_outputB -> _op_valE;
+    valC -> _op_valE;
+    icode -> _op_valE [style=dotted];
+    ifun -> _op_valE [style=dotted];
+    icode -> _reg_C:stall_C;
+    valE -> _reg_C:c_ZF;
+    valE -> _reg_C:c_SF;
+    _op_conditionsMet [shape="none" label="80-89"];
+    _op_conditionsMet -> conditionsMet;
+    _reg_C:C_SF -> _op_conditionsMet;
+    _reg_C:C_ZF -> _op_conditionsMet;
+    ifun -> _op_conditionsMet [style=dotted];
+    _op_mem_addr [shape="none" label="91-94"];
+    _op_mem_addr -> _datamem:mem_addr;
+    _regfile:reg_outputB -> _op_mem_addr;
+    valE -> _op_mem_addr;
+    icode -> _op_mem_addr [style=dotted];
+    _op_mem_input [shape="none" label="95-98"];
+    _op_mem_input -> _datamem:mem_input;
+    valP -> _op_mem_input;
+    _regfile:reg_outputA -> _op_mem_input;
+    icode -> _op_mem_input [style=dotted];
+    _op_mem_writebit [shape="none" label="99-102"];
+    _op_mem_writebit -> _datamem:mem_writebit;
+    icode -> _op_mem_writebit [style=dotted];
+    _op_mem_readbit [shape="none" label="103-106"];
+    _op_mem_readbit -> _datamem:mem_readbit;
+    icode -> _op_mem_readbit [style=dotted];
+    _op_reg_dstE [shape="none" label="109-115"];
+    _op_reg_dstE -> _regfile:reg_dstE;
+    regB -> _op_reg_dstE;
+    regA -> _op_reg_dstE;
+    conditionsMet -> _op_reg_dstE [style=dotted];
+    icode -> _op_reg_dstE [style=dotted];
+    _op_reg_inputE [shape="none" label="116-123"];
+    _op_reg_inputE -> _regfile:reg_inputE;
+    _regfile:reg_outputA -> _op_reg_inputE;
+    valC -> _op_reg_inputE;
+    valE -> _op_reg_inputE;
+    _datamem:mem_output -> _op_reg_inputE;
+    icode -> _op_reg_inputE [style=dotted];
+    _op_reg_dstM [shape="none" label="125-128"];
+    _op_reg_dstM -> _regfile:reg_dstM;
+    _regfile:reg_srcA -> _op_reg_dstM;
+    icode -> _op_reg_dstM [style=dotted];
+    _op_reg_inputM [shape="none" label="129-132"];
+    _op_reg_inputM -> _regfile:reg_inputM;
+    _datamem:mem_output -> _op_reg_inputM;
+    icode -> _op_reg_inputM [style=dotted];
+    _reg_P:P_pc -> _instmem:pc;
+
+}

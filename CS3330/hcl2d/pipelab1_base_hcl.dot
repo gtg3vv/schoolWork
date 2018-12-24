@@ -1,0 +1,60 @@
+digraph pipelab1_base { // auto-generated HCL2 visualization via graphviz
+    node [ fontname="sans-serif" ];
+    rankdir=BT;
+    ///////////////////////// builtin components ////////////////////////
+
+    _regfile [shape="record" label="{<reg_outputA>reg_outputA|<reg_srcA>reg_srcA}|{<reg_outputB>reg_outputB|<reg_srcB>reg_srcB}|{|{<reg_dstE>reg_dstE|<reg_inputE>reg_inputE}}|{|{<reg_dstM>reg_dstM|<reg_inputM>reg_inputM}}" style="filled" fillcolor="#aaffff"];
+    _datamem [shape="record" label="{<mem_output>mem_output|{<mem_readbit>mem_readbit|<mem_addr>mem_addr}}|{|{<mem_writebit>mem_writebit|<mem_input>mem_input}}" style="filled" fillcolor="#aaffff"];
+    _instmem [shape="record" label="{<i10bytes>i10bytes|<pc>pc}" style="filled" fillcolor="#aaffff"];
+    _status [shape="record" label="{|<Stat>Stat}" style="filled" fillcolor="#aaffff"];
+
+    //////////////////////////// user code //////////////////////////////
+
+_reg_F [shape="record" label="{|{<bubble_F>bubble_F|<stall_F>stall_F}}|{<F_pc>F_pc|<x_pc>x_pc}"];
+    _reg_F:F_pc -> _instmem:pc;
+    _instmem:i10bytes -> _reg_W:d_icode;
+    _instmem:i10bytes -> ifun;
+    _instmem:i10bytes -> rA;
+    _instmem:i10bytes -> rB;
+    _op_d_valC [shape="none" label="15-18"];
+    _op_d_valC -> _reg_W:d_valC;
+    _instmem:i10bytes -> _op_d_valC;
+    _reg_W:d_icode -> _op_d_valC [style=dotted];
+    _op_offset [shape="none" label="21-26"];
+    _op_offset -> offset;
+    _reg_W:d_icode -> _op_offset [style=dotted];
+    _op_valP [shape="none" label="27:7-20"];
+    _op_valP -> valP;
+    _reg_F:F_pc -> _op_valP;
+    offset -> _op_valP;
+    _op_d_Stat [shape="none" label="29-33"];
+    _op_d_Stat -> _reg_W:d_Stat;
+    _reg_W:d_icode -> _op_d_Stat [style=dotted];
+    _op_stall_F [shape="none" label="35-38"];
+    _op_stall_F -> _reg_F:stall_F;
+    _reg_W:d_Stat -> _op_stall_F [style=dotted];
+    _op_reg_srcA [shape="none" label="42-45"];
+    _op_reg_srcA -> _regfile:reg_srcA;
+    rA -> _op_reg_srcA;
+    _reg_W:d_icode -> _op_reg_srcA [style=dotted];
+    _op_d_reg_outputA [shape="none" label="47-50"];
+    _op_d_reg_outputA -> _reg_W:d_reg_outputA;
+    _regfile:reg_inputE -> _op_d_reg_outputA;
+    _regfile:reg_outputA -> _op_d_reg_outputA;
+    _regfile:reg_dstE -> _op_d_reg_outputA [style=dotted];
+    _regfile:reg_srcA -> _op_d_reg_outputA [style=dotted];
+    _op_d_reg_dstE [shape="none" label="53-56"];
+    _op_d_reg_dstE -> _reg_W:d_reg_dstE;
+    rB -> _op_d_reg_dstE;
+    _reg_W:d_icode -> _op_d_reg_dstE [style=dotted];
+_reg_W [shape="record" label="{|{<bubble_W>bubble_W|<stall_W>stall_W}}|{<W_icode>W_icode|<d_icode>d_icode}|{<W_reg_outputA>W_reg_outputA|<d_reg_outputA>d_reg_outputA}|{<W_valC>W_valC|<d_valC>d_valC}|{<W_Stat>W_Stat|<d_Stat>d_Stat}|{<W_reg_dstE>W_reg_dstE|<d_reg_dstE>d_reg_dstE}"];
+    _reg_W:W_reg_dstE -> _regfile:reg_dstE;
+    _reg_W:W_Stat -> _status:Stat;
+    _op_reg_inputE [shape="none" label="78-81"];
+    _op_reg_inputE -> _regfile:reg_inputE;
+    _reg_W:W_reg_outputA -> _op_reg_inputE;
+    _reg_W:W_valC -> _op_reg_inputE;
+    _reg_W:W_icode -> _op_reg_inputE [style=dotted];
+    valP -> _reg_F:x_pc;
+
+}

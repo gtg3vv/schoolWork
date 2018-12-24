@@ -1,0 +1,5 @@
+
+//Gabriel Groover (gtg3vv)
+// 01/27/16 postlab1.question.txt
+
+Is the *varname what signifies a pointer? We haven't covered this in class yet, so when do we even need to use a pointer as opposed to a normal object?

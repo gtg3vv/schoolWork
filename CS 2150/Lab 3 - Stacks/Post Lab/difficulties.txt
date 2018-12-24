@@ -1,0 +1,4 @@
+//Gabriel Groover (gtg3vv)
+// 2/11/16 difficulties.txt
+
+The main difficulties I had in this lab was handling user input, and fixing errors I had compiling the new stack classes. I was unfamiliar with the atoi() and also the cstr function that was necessary to turn the input to integers. In the end this was solved with a little googling. The other problem I had was my stack class didn't know what the type stacknode was. This was because I had recursive include statements and the part of the code that defined stacknode was never reached. All I had to do was remove the include statement in one of the two classes. 

@@ -1,0 +1,28 @@
+1 
+    I implemented the scraper using csv and pythons beautifulsoup for easy html parsing.
+The only problem I ran into here was finding the table in the html document because it
+did not have an id or unique class. I had to hard-code the location of the table on 
+this particular web page. This is also what I would change if I were to continue 
+improving my scraper. I would make the scraper locate the matching table dynamically
+on this page or another so that the scraper could be applied to other web pages 
+without having to change hard-coded values.
+
+2 
+    I did not use any flow diagrams, but briefly describe the algorithms in the 
+associated file.
+
+3 
+    The function E() does not satisfy the conditions to be a linear operator. It
+satisfies the first two conditions, assuming that you change the data type read 
+into the numpy array. If you do not, integer overflow will cause all three 
+conditions to fail. Even with this change, E(aX) = aE(x) does not hold.
+
+    It cannot because it does not maintain linearity.
+    
+    
+    Var does not satisfy this theorem. Var is implemented using the E() described
+above. The proof that var(aX + b) = a^2var(x) relies on the linearity of the 
+expected value operation. If this does not hold, we cannot rely on this lemma 
+when evaluating our variance. The theorem itself always holds for a random
+variable X, but it assumes linearity is not broken when obtaining the expected 
+value. Our implementation does not do this, so the theorem cannot be applied.

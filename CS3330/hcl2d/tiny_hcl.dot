@@ -1,0 +1,31 @@
+digraph tiny { // auto-generated HCL2 visualization via graphviz
+    node [ fontname="sans-serif" ];
+    rankdir=BT;
+    ///////////////////////// builtin components ////////////////////////
+
+    _regfile [shape="record" label="{<reg_outputA>reg_outputA|<reg_srcA>reg_srcA}|{<reg_outputB>reg_outputB|<reg_srcB>reg_srcB}|{|{<reg_dstE>reg_dstE|<reg_inputE>reg_inputE}}|{|{<reg_dstM>reg_dstM|<reg_inputM>reg_inputM}}" style="filled" fillcolor="#aaffff"];
+    _datamem [shape="record" label="{<mem_output>mem_output|{<mem_readbit>mem_readbit|<mem_addr>mem_addr}}|{|{<mem_writebit>mem_writebit|<mem_input>mem_input}}" style="filled" fillcolor="#aaffff"];
+    _instmem [shape="record" label="{<i10bytes>i10bytes|<pc>pc}" style="filled" fillcolor="#aaffff"];
+    _status [shape="record" label="{|<Stat>Stat}" style="filled" fillcolor="#aaffff"];
+
+    //////////////////////////// user code //////////////////////////////
+
+_reg_P [shape="record" label="{|{<bubble_P>bubble_P|<stall_P>stall_P}}|{<P_pc>P_pc|<p_pc>p_pc}"];
+    _reg_P:P_pc -> _instmem:pc;
+    _instmem:i10bytes -> opcode;
+    opcode -> icode;
+    _op_Stat [shape="none" label="40-43"];
+    _op_Stat -> _status:Stat;
+    icode -> _op_Stat [style=dotted];
+    _op_reg_srcA [shape="none" label="47:11-18"];
+    _op_reg_srcA -> _regfile:reg_srcA;
+    _op_reg_dstE [shape="none" label="49:11-18"];
+    _op_reg_dstE -> _regfile:reg_dstE;
+    _op_reg_inputE [shape="none" label="51-56"];
+    _op_reg_inputE -> _regfile:reg_inputE;
+    _regfile:reg_outputA -> _op_reg_inputE;
+    opcode -> _op_reg_inputE;
+    opcode -> _op_reg_inputE [style=dotted];
+    _reg_P:P_pc -> _reg_P:p_pc;
+
+}

@@ -1,0 +1,18 @@
+C005	000	jump variables
+0000	001	
+0001	002	one
+0011	003	max address
+3000	004	load value
+3003	005	load max
+6060	006	subtract i
+E011	007	if (i>max) jump xit
+3060	008	load i
+5004	009	add load value
+400b	00a	store doit
+0000	00b	doit
+1800	00c	print
+3060	00d	load i
+5002	00e	add one
+4060	00f	store i
+c005	010	jump to load max
+0000	011	xit

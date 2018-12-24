@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dfxml xmloutputversion='1.0'>
+  <metadata 
+  xmlns='http://afflib.org/tcpflow/' 
+  xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' 
+  xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:type>Feature Extraction</dc:type>
+  </metadata>
+  <creator version='1.0'>
+    <program>TCPFLOW</program>
+    <version>1.4.4</version>
+    <build_environment>
+      <compiler>4.8.2 (4.8.2 20140110 (prerelease) [ibm/gcc-4_8-branch merged from gcc-4_8-branch, revision 205847])</compiler>
+      <CPPFLAGS>-pthread -I/usr/local/include -D_FORTIFY_SOURCE=2 -DUTC_OFFSET=+0000 </CPPFLAGS>
+      <CFLAGS>-g   -pthread -g -O3 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wmissing-declarations -Wmissing-prototypes -Wshadow -Wwrite-strings -Wcast-align -Waggregate-return -Wbad-function-cast -Wcast-qual -Wundef -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wc++-compat -Wmissing-noreturn -Wall -Wstrict-prototypes</CFLAGS>
+      <CXXFLAGS>-g -pthread -g -O3 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -std=c++11 -Wall -MD -D_FORTIFY_SOURCE=2 -Wpointer-arith -Wshadow -Wwrite-strings -Wcast-align -Wredundant-decls -Wdisabled-optimization -Wfloat-equal -Wmultichar -Wmissing-noreturn -Woverloaded-virtual -Wsign-promo -funit-at-a-time -Wstrict-null-sentinel -Weffc++ </CXXFLAGS>
+      <LDFLAGS>-L/usr/local/lib -Wl,-Bsymbolic-functions -Wl,-z,relro</LDFLAGS>
+      <LIBS>-lpcap -lcairo -lfontconfig -lfreetype -lpixman-1 -lexpat  -lssl -lcrypto -lz -lssl -lcrypto </LIBS>
+      <compilation_date>2014-01-13T17:14:40</compilation_date>
+      <library name="boost" version="105400"/>
+    </build_environment>
+    <execution_environment>
+      <os_sysname>Linux</os_sysname>
+      <os_release>4.9.80-c9</os_release>
+      <os_version>#1 SMP Wed Feb 7 08:47:46 UTC 2018</os_version>
+      <host>gtg3vv-pythonwork-3695910</host>
+      <arch>x86_64</arch>
+      <command_line>tcpflow -i lo port 2222</command_line>
+      <uid>0</uid>
+      <start_time>2018-04-30T02:28:03Z</start_time>
+    </execution_environment>
+  </creator>
+  <configuration>
+  </configuration>
+  <tdelta>0</tdelta>
+  <configuration>
+    <fileobject>
+      <filename>127.000.000.001.51552-127.000.000.001.02222</filename>
+      <filesize>6</filesize>
+      <tcpflow startime='2018-04-30T02:28:13.239211Z' endtime='2018-04-30T02:28:13.239769Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='2' srcport='51552' dstport='2222' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.02222-127.000.000.001.53576</filename>
+      <filesize>45</filesize>
+      <tcpflow startime='2018-04-30T02:28:15.956082Z' endtime='2018-04-30T02:30:24.394087Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='12' srcport='2222' dstport='53576' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.53576-127.000.000.001.02222</filename>
+      <filesize>85</filesize>
+      <tcpflow startime='2018-04-30T02:28:15.956062Z' endtime='2018-04-30T02:30:24.394440Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='20' srcport='53576' dstport='2222' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.02222-127.000.000.001.54774</filename>
+      <filesize>30</filesize>
+      <tcpflow startime='2018-04-30T02:30:27.905360Z' endtime='2018-04-30T02:31:08.844575Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='9' srcport='2222' dstport='54774' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.02222-127.000.000.001.55312</filename>
+      <filesize>35</filesize>
+      <tcpflow startime='2018-04-30T02:31:28.920999Z' endtime='2018-04-30T02:33:42.317065Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='10' srcport='2222' dstport='55312' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.02222-127.000.000.001.56558</filename>
+      <filesize>30</filesize>
+      <tcpflow startime='2018-04-30T02:33:56.091838Z' endtime='2018-04-30T02:35:05.878984Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='9' srcport='2222' dstport='56558' family='2' />
+    </fileobject>
+    <fileobject>
+      <filename>127.000.000.001.02222-127.000.000.001.57272</filename>
+      <filesize>45</filesize>
+      <tcpflow startime='2018-04-30T02:35:21.023490Z' endtime='2018-04-30T02:36:26.220271Z' src_ipn='127.0.0.1' dst_ipn='127.0.0.1' packets='12' srcport='2222' dstport='57272' family='2' />
+    </fileobject>

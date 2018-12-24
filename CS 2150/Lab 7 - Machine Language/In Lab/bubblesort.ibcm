@@ -1,0 +1,72 @@
+C010	0000			jmp	outer		skip variables
+0000	001	i		dw	0
+0004	002	j		dw	4		
+0004	003	max		dw	4		highest array index
+3000	004	add		dw	3000		add opcode
+4000	005	storeadd	dw	4000		store opcode
+0000	006	zero		dw	0
+0001	007	one		dw	1
+0043	008	base		dw	0043		array base address
+0000	009	current		dw	0		leaving space here
+0000	00a
+0000	00b
+0000	00c
+0000	00d
+0000	00e
+0000	00f
+3003	010	outer		load 	max		if (i>max) xit
+6001	011			sub 	i
+E040	012			jump 	xit		
+3001	013			load 	i		else increment i
+5007	014			add 	1
+4001	015			store 	i
+3003	016			load 	max
+4002	017			store 	j
+3002	018	inner		load 	j		
+6001	019			sub 	i
+E010	01A			jumpl	outer		if(j<i) outer
+3002	01B			load 	j		else
+5008	01C			add 	base
+5004	01D			add 	add
+401F	01E			store	doit
+0000	01F	doit	
+4009	020			store 	current		save a[j]
+3002	021			load 	j
+6007	022			sub 	1
+5008	023			add 	base
+5004	024			add 	add
+4026	025			store 	doit2
+0000	026	doit2	
+6009	027			sub 	current
+E03C	028			jmpl 	inc		if(a[j] > a[j-1]) inc
+3002	029			load 	j		else swap
+5008	02A			add 	base
+5005	02B			add 	storeadd
+4034	02C			store 	doit3
+B000	02D	space
+3002	02E			load 	j
+6007	02F			sub 	1
+5008	030			add 	base
+5004	031			add 	add
+4033	032			store	doit4
+0000	033	doit4
+0000	034	doit3
+3002	035			load 	j
+6007	036			sub 	1
+5005	037			add 	storeadd
+5008	038			add 	base
+403B	039			store 	doit5
+3009	03A			load 	current
+0000	03B	doit5
+3002	03C	inc		load	j
+6007	03D			sub 	1
+4002	03E			store 	j
+C018	03F			jmp 	inner
+0000	040	xit		halt
+B000	041
+B000	042
+0005	043	a[0]		dw	
+0004	044	a[1]		dw	
+0003	045	a[2]		dw
+0002	046	a[3]		dw
+0001	047	a[4]		dw

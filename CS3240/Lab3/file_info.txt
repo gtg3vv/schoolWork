@@ -1,0 +1,1 @@
+{"file_info.txt": 0, "lab3_part1.py": 27, "lab3_part2.py": 22}

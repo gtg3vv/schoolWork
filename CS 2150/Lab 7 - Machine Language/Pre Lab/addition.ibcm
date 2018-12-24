@@ -1,0 +1,21 @@
+C004	000		jmp	start	skip vars
+0000	001	a	dw	0	int a
+0000	002	b	dw	0	int b
+0000	003	c	dw	0	int c
+1000	004	start	readH		read a
+4001	005		store	a	
+1000	006		readH		read b	
+4002	007		store	b
+1000	008		readH		read c
+4003	009		store	c
+5001	00A		add	a	add a to c
+5002	00B		add	b	add b to a + c
+D00E	00C		jmpe	xit	jump to xit if sum == 0
+C000	00D		jmp	start	else jump to start
+3001	00E	xit	load	a	print a
+1800	00F		printH	
+3002	010		load	b	print b
+1800	011		printH 
+3003	012		load	c	print c
+1800	013		printH		
+0000	014		halt		halt program

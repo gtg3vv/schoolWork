@@ -1,0 +1,4 @@
+//Gabriel Groover (gtg3vv)
+// 1/26/16 vector.questions.txt
+
+It seems that we can remove #include and using namespace from svtest because they are redundantly in svutil.h. Does this mean we could remove them from LifeCycleTest as well if it is in LifeCycle.h?

@@ -1,0 +1,39 @@
+C011	0000		 jmp		loop		Skip over vars
+0005	0001		 dw		a[0]		Values for a[i]
+0009	0002		 dw		a[1]	
+0001	0003		 dw		a[2]	
+000f	0004		 dw		a[3]	
+010e	0005		 dw		a[4]
+000f	0006		 dw		a[5]
+021f	0007		 dw		a[6]
+01ff	0008		 dw		a[7]
+0fff	0009		 dw		a[8]
+0001	000a	one	 dw		1	
+0009	000b	n	 dw		9		Number of elements
+0000	000c	zero	 dw		0	
+0000	000d	max	 dw		0		Current max
+0001	000e	address	 dw		1		address[i]
+0000	000f	i	 dw		0	
+3000	0010	add	 dw		3000		op code for load
+300b	0011	loop 	 load 		n		if(i != 9)
+600f	0012	 	 sub 		i
+b000	0013	 	 nop	
+D024	0014	 	 jmpe		xit		jump to xit
+300e	0015	 	 load		address		Add opcode load to address
+5010	0016	 	 add 		add
+4018	0017	 	 store 		doit		store instruction
+0000 	0018	doit	 dw		0
+600d	0019		 sub		max		if(address[i] - max > 0)
+e01d	001a	 	 jmpl		inc		jump to inc
+500d	001b		 add		max
+400d	001c		 store		max	
+300e	001d	inc	 load		address		increment address
+500a	001e	 	 add		one	
+400e	001f	 	 store 	 	address
+300f	0020		 load		i		increment i
+500a	0021		 add		one
+400f	0022		 store		i
+C011	0023	 	 jmp 		loop		jump to loop
+300d	0024	xit 	 load 		max		Print out final max
+1800	0025		 printH
+0000	0026		 halt

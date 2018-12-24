@@ -1,0 +1,52 @@
+                            | # Example instructions for decoding
+                            | 
+0x100:                      | .pos 0x100  # Start generating code at address 0x100
+                            | #/* $begin y86-decode1-ys */
+                            | #/* $begin y86-decode1-yo */
+0x100: 30f3fcffffffffffffff |     irmovq $-4,%rbx
+0x10a: 40630008000000000000 |     rmmovq %rsi,0x800(%rbx)
+0x114: 00                   |     halt
+                            | #/* $end y86-decode1-yo */
+                            | #/* $end y86-decode1-ys */
+                            | 
+0x200:                      | .pos 0x200  # Start generating code at address 0x200
+                            | #/* $begin y86-decode2-ys */
+                            | #/* $begin y86-decode2-yo */
+0x200: a06f                 |     pushq %rsi
+0x202: 800c02000000000000   |     call proc
+0x20b: 00                   |     halt
+0x20c:                      | proc:
+0x20c: 30f30a00000000000000 |     irmovq $10,%rbx
+0x216: 90                   |     ret
+                            | #/* $end y86-decode2-yo */
+                            | #/* $end y86-decode2-ys */
+                            | 
+0x300:                      | .pos 0x300  # Start generating code at address 0x300
+                            | #/* $begin y86-decode3-ys */
+                            | #/* $begin y86-decode3-yo */
+0x300: 50540700000000000000 |     mrmovq 7(%rsp),%rbp
+0x30a: 10                   |     nop
+0x30b: f0                   | .byte 0xf0  # Invalid instruction code
+0x30c: b01f                 |     popq %rcx
+                            | #/* $end y86-decode3-yo */
+                            | #/* $end y86-decode3-ys */
+                            | 
+0x400:                      | .pos 0x400  # Start generating code at address 0x400
+                            | #/* $begin y86-decode4-ys */
+                            | #/* $begin y86-decode4-yo */
+0x400:                      | loop:
+0x400: 6113                 |     subq %rcx, %rbx
+0x402: 730004000000000000   |     je loop
+0x40b: 00                   |     halt  
+                            | #/* $end y86-decode4-yo */
+                            | #/* $end y86-decode4-ys */
+                            | 
+0x500:                      | .pos 0x500  # Start generating code at address 0x500
+                            | #/* $begin y86-decode5-ys */
+                            | #/* $begin y86-decode5-yo */
+0x500: 6362                 |     xorq %rsi,%rdx
+0x502: a0                   |     .byte 0xa0  # pushq instruction code
+0x503: f0                   |     .byte 0xf0  # Invalid register specifier byte
+                            | #/* $end y86-decode5-yo */
+                            | #/* $end y86-decode5-ys */
+                            | 

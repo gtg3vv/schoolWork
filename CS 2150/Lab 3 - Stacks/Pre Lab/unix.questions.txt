@@ -1,0 +1,4 @@
+//Gabriel Groover (gtg3vv)
+// February, 02 2016 unix.questions.txt
+
+I'm not clear on the purpose of the who command. What does it mean for other people to be on the system with you? Does this only apply to servers?

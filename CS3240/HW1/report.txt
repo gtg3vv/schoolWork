@@ -1,0 +1,24 @@
+#Gabriel Groover (gtg3vv)
+
+1. I use the ADT  list as a container for data points.
+2. I use an array list to hold all of the data points from file and an array to 
+    hold k nearest neighbors and distances for each user point.
+3. I found the usage of cat1/cat2 repeatedly somewhat confusing because they are
+    just placeholders, but that isn't clear. I also was confused by 
+    "non-decreasing" order. That would imply an infinite number of orderings.
+4. I created a data point class to represent each xy pair and category. The data
+    read in from the file is placed into an arraylist of data points. The distance
+    to each point in arraylist is calculated for each user point entered. This 
+    distance is compared to an array of k nearest neighbor distances and placed 
+    into the array if necessary. The resulting array of nearest neighbors is 
+    used to calculate average and classification. 
+5. I created test cases for  each major step of the calculation. I tested my 
+    distance function and verified that the data points were read in correctly.
+    I then verified my k neighbors results with several test cases before 
+    finally verifying the average  and classification were correct.
+6. I did a basic test case with 10 data points  and  k = 5 to test functionality.
+    I did a test case where m was smaller than the data file to make sure the file 
+    was still read correctly. I also tested cases with varying numbers of cat1 and
+    cat2 in the k nearest neighbors to ensure that the classification was being
+    done correctly.
+7. I spent about 2 hrs on this assignment.

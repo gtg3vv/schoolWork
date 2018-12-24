@@ -1,0 +1,7 @@
+cat2 2 0
+cat1 .5 0
+cat2   1  0
+cat1 0  0
+cat2   0 3
+cat2   0  0
+cat2   0  3

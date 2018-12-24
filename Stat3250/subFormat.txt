@@ -1,0 +1,72 @@
+##########################################
+###  Do not include this in your solutions
+###
+## This file is meant to show how to format
+## solutions for the inclass assignments.
+## Questions are for demonstration purposes.
+
+## For each question, please include (in order): 
+## (a) The question letter/number
+## (b) Your code
+## (c) A copy of your output in triple quotes
+##     (include the question number again)
+
+## Sample Assignment Questions
+
+## A1. Find the product of 217 and 23.
+
+## A2. Extract the sublist of mylist that goes from
+##     the 3rd to the 8th elements (inclusive).
+
+## A3. Reverse the order of mylist, extract
+##     every other entry (starting with 20),
+##     delete 16, and replace the new 3rd entry
+##     with 71.
+
+###
+### End of portion to not include
+##########################################
+
+## Starting below is a sample assignment submission file.
+
+
+## File: jjh2b-sample-assignment-solns.py 
+## Topic: Sample Assignment Solutions
+## Name: Jeff Holt
+## Section time: 2:00-6:15
+## Grading Group: 3
+
+## A1.
+
+217*23      # The code
+
+"""
+# A1
+4991        # The output; you add the triple quotes
+"""
+
+
+## A2. 
+
+mylist = [2,4,6,8,10,12,14,16,18,20] # Def. of mylist
+mylist[2:8]  # Extract 3rd to 8th entries
+
+"""
+# A2
+[6, 8, 10, 12, 14, 16]
+"""
+
+
+## A3. 
+
+x = list(mylist)  # Makes a copy of mylist named x
+x.reverse()   # Reverse the order of x
+x = x[::2]    # Extract every other entry, redefine x
+x.remove(16)  # Remove 16 from x
+x[2] = 71     # Replace the 3rd entry with 71
+print(x)      # Print out final list
+
+"""
+# A3
+[20, 12, 71, 4]
+"""

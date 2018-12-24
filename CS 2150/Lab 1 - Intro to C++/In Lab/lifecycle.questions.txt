@@ -1,0 +1,6 @@
+//Gabriel Groover (gtg3vv)
+// 1/26/16 lifecycle.questions.txt
+
+How exactly is the call by reference and call by value working? How closely is it related to pass by reference/value in java?
+
+Why must an object construct and destruct?

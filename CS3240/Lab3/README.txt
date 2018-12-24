@@ -1,0 +1,1 @@
+I had  some trouble getting VirtualEnv set up, but I got through all of the first three py files. I didn't get to activities 3/4.
